@@ -24,7 +24,7 @@ const showProducts = (products) => {
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item item-bg">Category: ${product.category}</li>
-    <li class="list-group-item item-bg">Average Rating: ${product.rating.rate} by ${product.rating.count} Customers</li>
+    <li class="list-group-item item-bg">Average Rating: ${product.rating.rate} by ${product.rating.count} Happy Customers.</li>
     <li class="list-group-item item-bg">Price: $ ${product.price}</li>
   </ul>
   <div class="card-body">
@@ -69,7 +69,7 @@ const updatePrice = (id, value) => {
           InnerText Function Function
 --------------------------------------------*/
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = Math.round(value).toFixed(2);
+  document.getElementById(id).innerText = value.toFixed(2);
 };
 /*----------------------------------------------------
     Update Delivery Charge & Total Tax Function
